@@ -2,7 +2,6 @@
 #include <vector>
 #include <fstream>
 #include <random>
-#include <wchar.h>
 #include <algorithm>
 
 using namespace std;
@@ -52,6 +51,14 @@ int main()
     }
 
     wcout << L"\n\nСумма элементов массива C[5] по формуле в условии = " << sum;
+
+    double tmp = c.front();
+    c.front() = c.back();
+    c.back() = tmp;
+
+    wcout << L"\n\nМассив C[5] минимальных элементов из D[4,6] после перестановки первого и последнего элемента:" << endl << endl;
+    for(int i = 0; i < 5; i++)
+        cout << c[i] << '\t';
 
     return 1;
 }
