@@ -8,14 +8,14 @@ using namespace std;
 int main()
 {
     setlocale(LC_ALL, "rus");
-    vector<vector<double>> b;
+    vector<vector<int>> b;
     b.resize(5);
 
     std::random_device rd;
     std::mt19937 gen(rd());
     std::uniform_int_distribution<> distr(1, 100); // случайные значения в диапазоне 1, 100
 
-    wcout << L"Двумерный массив B[5,5] случайных вещественных чисел:" << endl << endl;
+    wcout << L"Двумерный массив B[5,5] случайных чисел:" << endl << endl;
     for(int i = 0; i < b.size(); i++)
     {
         b[i].resize(5);
@@ -63,7 +63,7 @@ int main()
     b[1][pos_min_second_row] = b[2][pos_min_third_row];
     b[2][pos_min_third_row] = tmp;
 
-    wcout << L"\nДвумерный массив B[5,5] случайных вещественных чисел после перестановки по условию:" << endl << endl;
+    wcout << L"\nДвумерный массив B[5,5] случайных чисел после перестановки по условию:" << endl << endl;
     for(int i = 0; i < b.size(); i++)
     {
         for(int j = 0; j < b[0].size(); j++)
