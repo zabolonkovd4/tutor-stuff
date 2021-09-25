@@ -1,0 +1,1 @@
+F(a,b) = (arcsin(b + pow(a, 1.4)) / sin(0.5 * pow(b,a)) + pow(a,7) + exp(0.1 * a)
