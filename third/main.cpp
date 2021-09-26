@@ -28,8 +28,6 @@ int main()
         {
             double inside_cos = 1.86 * b;
             double inside_sin = sqrt(a) * b;
-            double sinus = sin(inside_sin);
-            double cosine = cos(inside_cos);
             double result = pow(abs(sin(inside_sin)), 2.2) - 2. * pow(cos(inside_cos), 4.);
 
             cout << setprecision(4) << a << '\t' << b << '\t';
