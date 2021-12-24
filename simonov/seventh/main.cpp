@@ -2,6 +2,7 @@
 #include <vector>
 #include <cmath>
 #include <random>
+#include <time.h>
 
 using namespace std;
 
@@ -20,7 +21,7 @@ int main()
         cout << A[i] << '\t';
         sum += A[i];
     }
-    cout << "\nSum of all numbers in array A = " << sum << endl;
+    cout << "\nСумма всех элементов массива A = " << sum << endl;
 
     return 1;
 }

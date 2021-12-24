@@ -6,11 +6,10 @@ using namespace std;
 int main()
 {
     double x, y;
-    // TODO: something wrong with input
-    cout << "Input x: " << endl;
+    cout << "Введите x: " << endl;
     cin >> x;
 
-    cout << "Input y: " << endl;
+    cout << "Введите y: " << endl;
     cin >> y;
 
     double F = 0;

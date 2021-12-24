@@ -15,9 +15,9 @@ int main()
 
     random_device rd;
     mt19937 gen(rd());
-    uniform_int_distribution<> distr(1, 1000); // случайные значения в диапазоне 1, 100
+    uniform_int_distribution<> distr(1, 1000);
 
-    cout << "B[8,8] elements:" << endl << endl;
+    cout << "Элементы массива B[8,8]:" << endl << endl;
     for(int i = 0; i < B.size(); i++)
     {
         B[i].resize(8);
@@ -35,8 +35,8 @@ int main()
         cout << endl;
     }
 
-    cout << "Minimum of B[8,8] elements = " << minimum << endl;
-    cout << "Position of minimum (row, col) = (" << position.first + 1 << ", " << position.second + 1<< ")" << endl;
+    cout << "Минимальный элемент массива B[8,8] = " << minimum << endl;
+    cout << "Позиция минимального элемента (строка, столбец) = (" << position.first + 1 << ", " << position.second + 1<< ")" << endl;
 
     return 1;
 }
