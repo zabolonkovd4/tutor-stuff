@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <conio.h>
 #include <cmath>
 
 using namespace std;
