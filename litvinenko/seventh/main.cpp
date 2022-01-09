@@ -26,6 +26,6 @@ int main()
 
     for(int i = 0; i < A.size(); i++)
         printf("%i \t", A[i]);
-
+	
     return 1;
 }
